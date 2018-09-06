@@ -20,8 +20,5 @@
   "homepage": "https://github.com/YorkAARGH/SuperbasicBot#readme",
   "dependencies": {
     "discord.js": "^11.2.1",
-    "ffmpeg": "^0.0.4",
-    "node-opus": "^0.3.0",
-    "eliteselfbot": "^1.0.2"
   }
 }
