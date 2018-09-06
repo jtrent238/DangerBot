@@ -1,0 +1,7 @@
+{
+  "token" : "Discord bot token goes here",
+  "ms" : 3000,
+  "roleToDisco" : ["Disco", "(optional) another role to disco goes here"],
+  "prefix" : "d!",
+  "allowedUsers" : ["472537866212212737", "(optional) another user id goes here"]
+}
