@@ -1,12 +1,22 @@
-/*
---- Discord's Rules on self-bots ---
-
-Selfbots are against Discord's ToS (Terms of Service) so use it at your own risk. Also don't overuse it, and don't make it obvious that you are using it either. I'm not held responsible if you get banned for using this selfbot.
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log(Date.now() + " Ping Received");
+  //response.sendStatus(200);
+  response.sendFile(__dirname + '/site/index.html');
   
-Here is an article made by Discord about self-bots: https://support.discordapp.com/hc/en-us/articles/115002192352
+  //app.use(morgan('combined'))
+});
 
-Also you can't run this script on repl.it :)
-*/
+app.get('/', function (req, res) {
+  res.send('hello, world!')
+})
+
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
 
 const Discord = require("discord.js");
 //const Colours = require("colors");
