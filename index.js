@@ -41,6 +41,7 @@ client.on('ready',() => {
   console.log(`Is client Verified?: ${client.user.verified}!`);
   console.log(`Client Created on: ${client.user.createdAt}!`);
   //hook.send('I am now alive!');
+  client.user.setActivity(`Orespawn ` + process.env.OSVER + ` on DangerZone ` + process.env.DZVER);
   //game(streamingGame);
 });
 
@@ -72,20 +73,50 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'dangerzonedl')) {
     message.channel.sendMessage('Click Here: ' + dangerzonedl + ' to download the latest version of DangerZone!');
   }
+      if (message.content.startsWith(prefix + 'dzdl')) {
+        message.channel.sendMessage('Click Here: ' + dangerzonedl + ' to download the latest version of DangerZone!');
+      }
+      if (message.content.startsWith(prefix + 'dangerzonedownload')) {
+        message.channel.sendMessage('Click Here: ' + dangerzonedl + ' to download the latest version of DangerZone!');
+      }
       //Gets OreSpawn Download Link
   if (message.content.startsWith(prefix + 'orespawndl')) {
     message.channel.sendMessage('Click a link below to download the latest version of OreSpawn!: ' + orespawndl + '');
   }
+      if (message.content.startsWith(prefix + 'osdl')) {
+        message.channel.sendMessage('Click a link below to download the latest version of OreSpawn!: ' + orespawndl + '');
+      }
+      if (message.content.startsWith(prefix + 'orespawndownload')) {
+        message.channel.sendMessage('Click a link below to download the latest version of OreSpawn!: ' + orespawndl + '');
+      }
   
       //Gets Latest DangerZone Version
   if (message.content.startsWith(prefix + 'dangerzoneversion')) {
     message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
   }
+      if (message.content.startsWith(prefix + 'dzversion')) {
+          message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
+      }
+      if (message.content.startsWith(prefix + 'dangerzonever')) {
+          message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
+      }
+      if (message.content.startsWith(prefix + 'dzver')) {
+        message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
+      }  
   
         //Gets Latest Orespawn Version
   if (message.content.startsWith(prefix + 'orespawnversion')) {
     message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
   }
+      if (message.content.startsWith(prefix + 'osversion')) {
+        message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
+      }
+      if (message.content.startsWith(prefix + 'orespawnver')) {
+        message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
+      }
+      if (message.content.startsWith(prefix + 'osver')) {
+        message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
+      }
   
       //Information about the bot.
   if (message.content.startsWith(prefix + 'info')) {
