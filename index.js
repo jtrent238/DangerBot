@@ -30,7 +30,7 @@ const message = "";
 
 const dangerzonedl = "http://www.dangerzonegame.net/download-now.html";
 const orespawndl = "\n _*Dangerzone*_ \n - OreSpawn for DZ can be found here: http://www.dangerzonegame.net/mods.html \n_*Minecraft*_ \n - http://www.orespawn.com/ \n ";
-const dangerzonever = "VERSION 1.8b Released Augest 3, 2019";
+const dangerzonever = "VERSION 2.1 Released January 21, 2021";
 const orespawnver = "\n _*Dangerzone*_ \n - `ORESPAWN ``2.2 ``ON DANGERZONE 2.1` released November 30, 2019 \n _*Minecraft*_ \n - 1.12.2: `orespawnMC_1.12-development_0.6` released on IDK LOL!!! \n - 1.7.10: `1.7.10v20.3` released on February 7, 2015!!! \n - 1.6.4: `1.6.4v20` released on September 27, 2014!!! \n ";
 
 var developerids = ["204669722094993417"]
@@ -94,6 +94,7 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'dangerzoneversion')) {
     message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
   }
+      /*
       if (message.content.startsWith(prefix + 'dzversion')) {
           message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
       }
@@ -103,11 +104,13 @@ client.on('message', message => {
       if (message.content.startsWith(prefix + 'dzver')) {
         message.channel.sendMessage('The latest version of DangerZone is: ' + dangerzonever);
       }  
+      */
   
         //Gets Latest Orespawn Version
   if (message.content.startsWith(prefix + 'orespawnversion')) {
     message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
   }
+      /*
       if (message.content.startsWith(prefix + 'osversion')) {
         message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
       }
@@ -117,6 +120,7 @@ client.on('message', message => {
       if (message.content.startsWith(prefix + 'osver')) {
         message.channel.sendMessage('The latest version of OreSpawn is: ' + orespawnver);
       }
+      */
   
       //Information about the bot.
   if (message.content.startsWith(prefix + 'info')) {
