@@ -29,7 +29,7 @@ const prefix = "danger!";
 const message = "";
 
 const dangerzonedl = "http://www.dangerzonegame.net/download-now.html";
-const orespawndl = "\n _*Dangerzone*_ \n - OreSpawn for DZ can be found here: http://www.dangerzonegame.net/mods.html \n_*Minecraft*_ \n - 1.7.10: http://www.orespawn.com/download-17.html \n - 1.6.4: http://www.orespawn.com/download-164.html \n ";
+const orespawndl = "\n _*Dangerzone*_ \n - OreSpawn for DZ can be found here: http://www.dangerzonegame.net/mods.html \n_*Minecraft*_ \n - http://www.orespawn.com/ \n ";
 const dangerzonever = "VERSION 1.8b Released Augest 3, 2019";
 const orespawnver = "\n _*Dangerzone*_ \n - `ORESPAWN ``2.2 ``ON DANGERZONE 2.1` released November 30, 2019 \n _*Minecraft*_ \n - 1.12.2: `orespawnMC_1.12-development_0.6` released on IDK LOL!!! \n - 1.7.10: `1.7.10v20.3` released on February 7, 2015!!! \n - 1.6.4: `1.6.4v20` released on September 27, 2014!!! \n ";
 
